@@ -1,0 +1,131 @@
+#baseCardTray {
+    background-color: grey;
+
+    grid-row: 1 / span 7;
+    grid-column: 1 / span 2;
+
+    display: grid;
+    grid-template: repeat(101, 1fr) / repeat(51, 1fr)
+}
+
+#Copper {
+    grid-row: 3 / span 18;
+    grid-column: 3 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#Estate {
+    grid-row: 3 / span 18;
+    grid-column: 27 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#Silver {
+    grid-row: 22 / span 18;
+    grid-column: 3 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#Duchy {
+    grid-row: 22 / span 18;
+    grid-column: 27 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#Gold {
+    grid-row: 41 / span 18;
+    grid-column: 3 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#Province {
+    grid-row: 41 / span 18;
+    grid-column: 27 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#Curse {
+    grid-row: 60 / span 18;
+    grid-column: 27 /span 22;
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#trash {
+    grid-row: 60 / span 35;
+    grid-column: 3 /span 22;
+    background-image: url('../Resources/trash.png');
+    background-size: contain;
+    
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#stackCount {
+    grid-row: 96;
+    grid-column: 92; 
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 
+        -1px -1px 0px #000,
+        0px -1px 0px #000,
+        1px -1px 0px #000,
+        -1px 0px 0px #000,
+        1px  0px 0px #000,
+        -1px 1px 0px #000,
+        0px 1px 0px #000,
+        1px 1px 0px #000;
+}
+
+#rulesBox {
+    grid-row: 79 / span 16;
+    grid-column: 27 /span 22; 
+
+    background-color: dimgrey;
+    border: 2px solid black;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr)
+}
+
+#rulesLink {
+     grid-row: 50;
+     grid-column: 50; 
+
+     font-family: sans-serif;
+     font-size: 2vw;
+     color: white;
+     text-decoration: none;
+     text-shadow: 
+     -1px -1px 0px #000,
+     0px -1px 0px #000,
+     1px -1px 0px #000,
+     -1px 0px 0px #000,
+     1px  0px 0px #000,
+     -1px 1px 0px #000,
+     0px 1px 0px #000,
+     1px 1px 0px #000;
+}

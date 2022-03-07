@@ -1,0 +1,128 @@
+#handTray {
+    background-color: grey;
+
+    grid-row: 8 / span 3;
+    grid-column: span 10;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#deck {
+    background-color: grey;
+
+    grid-row: 6 / span 91;
+    grid-column: 6 / span 10;
+
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#hand {
+    background-color: grey;
+
+    grid-row: 1 / span 100;
+    grid-column: 21 / span 60;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#discard {
+    background-color: grey;
+
+    grid-row: 6 / span 91;
+    grid-column: 86 / span 10;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#topCard {
+    grid-row: 1 / span 100;
+    grid-column: 3 / span 98; 
+    background-size: contain;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#leftArrow {
+    grid-row: 1 / span 100;
+    grid-column: 1 / span 4;
+    background-color: grey;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#handLeftArrow {
+    grid-row: 45 ;
+    grid-column: 0 ;
+}
+
+#rightArrow {
+    grid-row: 1 / span 100 ;
+    grid-column: 97 / span 4;
+    background-color: grey;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#handRightArrow {
+    grid-row: 45 ;
+    grid-column: 100 ;
+}
+
+#handCard1 {
+    grid-row: 6 / span 90 ;
+    grid-column: 5 / span 16; 
+    background-size: contain;
+}
+
+#handCard2 {
+    grid-row: 6 / span 90 ;
+    grid-column: 24 / span 16; 
+    background-size: contain;
+}
+
+#handCard3 {
+    grid-row: 6 / span 90 ;
+    grid-column: 43 / span 16; 
+    background-size: contain;
+}
+
+#handCard4 {
+    grid-row: 6 / span 90 ;
+    grid-column: 62 / span 16; 
+    background-size: contain;
+}
+
+#handCard5 {
+    grid-row: 6 / span 90 ;
+    grid-column: 81 / span 16; 
+    background-size: contain;
+    z-index: 2;
+}
+
+#stackCount {
+    grid-row: 96;
+    grid-column: 92; 
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 
+        -1px -1px 0px #000,
+        0px -1px 0px #000,
+        1px -1px 0px #000,
+        -1px 0px 0px #000,
+        1px  0px 0px #000,
+        -1px 1px 0px #000,
+        0px 1px 0px #000,
+        1px 1px 0px #000;
+}

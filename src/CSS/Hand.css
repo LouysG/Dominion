@@ -1,0 +1,10 @@
+#hand {
+    background-color: coral;
+
+    grid-row: 1 / span 10 ;
+    grid-column: 3 / span 6;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(50, 1fr)
+}
+

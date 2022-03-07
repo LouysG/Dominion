@@ -1,0 +1,83 @@
+#PlayerTray {
+    background-color: cyan;
+    color: white;
+    text-shadow: 
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px 0px 0px #000,
+    1px  0px 0px #000,
+    -1px 1px 0px #000,
+    0px 1px 0px #000,
+    1px 1px 0px #000;
+
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 6;
+
+    display: grid;
+    grid-template: repeat(1, 1fr) / reapeat(3, 1fr);
+}
+
+.player {
+    display: grid;
+    grid-template: repeat(18, 1fr) / repeat(24, 1fr);
+}
+
+.avatar {
+    background-image: url(../Resources/avatar.png);
+    background-size: contain;
+
+    display: grid;
+}
+
+.name {
+    grid-row: 3 / span 12;
+    grid-column: 11 / span 13;
+    font-family: sans-serif;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+.victoryPointIcon {
+    grid-row: 9 / span 8;
+    grid-column: 11 / span 3;
+    background-image: url(../Resources/victory-point.png);
+    background-size: contain;
+
+    display: grid;
+}
+
+.points {
+    grid-row: 7 / span 11;
+    grid-column: 15 / span 8;
+
+    font-family: sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+
+    display: grid;
+}
+
+#Player1 {
+    background-color: navy;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#Player2 {
+    background-color: darkolivegreen;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#Player3 {
+    background-color: goldenrod;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#Player4 {
+    background-color: goldenrod;
+    grid-row: 1;
+    grid-column: 3;
+}

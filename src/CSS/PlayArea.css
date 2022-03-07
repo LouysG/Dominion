@@ -1,0 +1,457 @@
+#playArea {
+    background-color: lightgrey;
+
+    grid-row: 2 / span 6;
+    grid-column: 3 / span 6;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#selectorTray {
+    background-color: lightgray;
+
+    grid-row: 1 / span 100;
+    grid-column: 1 / span 100;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#resourceTray {
+    background-color: maroon;
+    color: gold;    
+    text-shadow: 
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px 0px 0px #000,
+    1px  0px 0px #000,
+    -1px 1px 0px #000,
+    0px 1px 0px #000,
+    1px 1px 0px #000;
+
+
+    grid-row: 1 / span 10;
+    grid-column: 20 / span 60;
+
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+
+}
+
+#passButton {
+    background-color: maroon;
+    font-family: sans-serif;
+    font-size: 2vw;
+    text-shadow: 
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px 0px 0px #000,
+    1px  0px 0px #000,
+    -1px 1px 0px #000,
+    0px 1px 0px #000,
+    1px 1px 0px #000;
+
+    grid-row: 1 / span 10;
+    grid-column: 80 / span 16;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#gameStateMonitor {
+    background-color: Maroon;
+    font-family: sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    color: gold;
+    white-space: nowrap;
+    text-shadow: 
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px 0px 0px #000,
+    1px  0px 0px #000,
+    -1px 1px 0px #000,
+    0px 1px 0px #000,
+    1px 1px 0px #000;
+
+    grid-row: 1 / span 10;
+    grid-column: 6 / span 14;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#turnPhaseText {
+    grid-row: 15 / span 10;
+    grid-column: 10 / span 16;
+}
+
+#subphaseText {
+    grid-row: 55 / span 10;
+    grid-column: 10 / span 16;
+}
+
+#passText {
+    grid-row: 18 / span 10;
+    grid-column: 27 / span 16;
+}
+
+#actions {
+    background-color: maroon;
+
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#buys {
+    background-color: maroon;
+
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#gold {
+    background-color: maroon;
+
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#actionIcon {
+    grid-row: 10 / span 80;
+    grid-column: 5 / span 23;
+    background-size: contain;
+}
+
+#buyIcon {
+    grid-row: 10 / span 80;
+    grid-column: 5 / span 22;
+    background-size: contain;
+}
+
+#goldIcon {
+    grid-row: 10 / span 80;
+    grid-column: 5 / span 23;
+    background-size: contain;
+}
+
+.resourceCount {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+
+    grid-row: 10 / span 90;
+    grid-column: 50 / span 50;
+}
+
+#leftArrowInPlay {
+    grid-row: 1 / span 100;
+    grid-column: 1 / span 5;
+    background-color: lightgrey;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#rightArrowSelectorTray {
+    grid-row: 1 / span 100 ;
+    grid-column: 97 / span 4;
+    background-color: lightgrey;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#leftArrowSelectorTray {
+    grid-row: 1 / span 100;
+    grid-column: 1 / span 4;
+    background-color: lightgrey;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#rightArrowInPlay {
+    grid-row: 1 / span 100 ;
+    grid-column: 96 / span 5;
+    background-color: lightgrey;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#playAreaLeftArrow {
+    grid-row: 45 ;
+    grid-column: 20 ;
+}
+
+#playAreaRightArrow {
+    grid-row: 45 ;
+    grid-column: 80 ;
+}
+
+#inPlayCard1 {
+    grid-row: 15 / span 45 ;
+    grid-column: 6 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard2 {
+    grid-row: 15 / span 45 ;
+    grid-column: 14 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard3 {
+    grid-row: 15 / span 45 ;
+    grid-column: 22 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard4 {
+    grid-row: 15 / span 45 ;
+    grid-column: 30 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard5 {
+    grid-row: 15 / span 45 ;
+    grid-column: 38 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard6 {
+    grid-row: 15 / span 45 ;
+    grid-column: 46 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard7 {
+    grid-row: 15 / span 45 ;
+    grid-column: 54 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard8 {
+    grid-row: 15 / span 45 ;
+    grid-column: 62 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard9 {
+    grid-row: 15 / span 45 ;
+    grid-column: 70 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard10 {
+    grid-row: 15 / span 45 ;
+    grid-column: 78 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard11 {
+    grid-row: 45 / span 45 ;
+    grid-column: 8 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard12 {
+    grid-row: 45 / span 45 ;
+    grid-column: 16 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard13 {
+    grid-row: 45 / span 45 ;
+    grid-column: 24 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard14 {
+    grid-row: 45 / span 45 ;
+    grid-column: 32 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard15 {
+    grid-row: 45 / span 45 ;
+    grid-column: 40 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard16 {
+    grid-row: 45 / span 45 ;
+    grid-column: 48 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard17 {
+    grid-row: 45 / span 45 ;
+    grid-column: 56 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard18 {
+    grid-row: 45 / span 45 ;
+    grid-column: 64 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard19 {
+    grid-row: 45 / span 45 ;
+    grid-column: 72 / span 16; 
+    background-size: contain;
+}
+
+#inPlayCard20 {
+    grid-row: 45 / span 45 ;
+    grid-column: 80 / span 16; 
+    background-size: contain;
+}
+
+#selectorTrayCard1 {
+    grid-row: 25 / span 45 ;
+    grid-column: 5 / span 16; 
+    background-size: contain;
+}
+
+#selectorTrayCard2 {
+    grid-row: 25 / span 45 ;
+    grid-column: 24 / span 16; 
+    background-size: contain;
+}
+
+#selectorTrayCard3 {
+    grid-row: 25 / span 45 ;
+    grid-column: 43 / span 16; 
+    background-size: contain;
+}
+
+#selectorTrayCard4 {
+    grid-row: 25 / span 45 ;
+    grid-column: 62 / span 16; 
+    background-size: contain;
+}
+
+#selectorTrayCard5 {
+    grid-row: 25 / span 45 ;
+    grid-column: 81 / span 16; 
+    background-size: contain;
+}
+
+#message {
+    font-family: sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+
+    grid-row: 12 / span 10;
+}
+
+#buttonText {
+    font-family: sans-serif;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: gold;
+    white-space: nowrap;
+    text-shadow: 
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px 0px 0px #000,
+    1px  0px 0px #000,
+    -1px 1px 0px #000,
+    0px 1px 0px #000,
+    1px 1px 0px #000;
+
+    grid-row: 17 / span 10;
+    grid-column: 10;
+}
+
+#button2 {
+    grid-row: 85 / span 10;
+    grid-column: 70 / span 20;
+    background-color: maroon;  
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#button1 {
+    grid-row: 85 / span 10;
+    grid-column: 40 / span 20;
+    background-color: maroon;  
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#button3 {
+    grid-row: 85 / span 10;
+    grid-column: 10 / span 20;
+    background-color: maroon;  
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#button4 {
+    grid-row: 65 / span 10;
+    grid-column: 70 / span 20;
+    background-color: maroon;  
+}
+
+#button5 {
+    grid-row: 85 / span 10;
+    grid-column: 10 / span 20;
+    background-color: marron;  
+}
+
+#button6 {
+    grid-row: 85 / span 10;
+    grid-column: 70 / span 20;
+    background-color: maroon;  
+}
+
+#handScrollCounter {
+    grid-row: 96 / span 5;
+    grid-column: 46 / span 10;
+    background-color: maroon;
+    color: gold;
+    text-shadow: 
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px 0px 0px #000,
+    1px  0px 0px #000,
+    -1px 1px 0px #000,
+    0px 1px 0px #000,
+    1px 1px 0px #000;
+
+    font-size: 1.4vw;
+    font-weight: bold;
+    font-family: sans-serif;
+    white-space: nowrap;
+
+    display: grid;
+    grid-template: repeat(100, 1fr) / repeat(100, 1fr);
+}
+
+#handScrollText {
+    grid-row: 10 / span 10;
+    grid-column: 27 / span 10;
+}
+
